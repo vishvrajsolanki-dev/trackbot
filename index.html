@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TrackBot 1 — Autonomous Warehouse Robot</title>
+<title>TrackBot 1 — SSIP Proposal Hub</title>
 <meta name="description" content="TrackBot 1 SSIP Proposal Hub — Autonomous Warehouse Logistics Robot">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <nav>
   <a class="nav-brand" href="#"><span class="dot"></span>TrackBot 1</a>
   <ul class="nav-links">
@@ -17,25 +18,25 @@
     <li><a href="#ideas">Ideas</a></li>
     <li><a href="#references">References</a></li>
   </ul>
-  <span class="nav-badge">SSIP Proposal</span>
+  <span class="nav-badge">SSIP — ₹30,000</span>
 </nav>
 
 <div class="hero">
   <div class="hero-eyebrow">Autonomous Guided Vehicle — Upgrade Documentation</div>
   <h1>TrackBot <span class="accent">1</span><br><span class="dim">Warehouse Logistics Robot</span></h1>
-  <p class="hero-desc">Full upgrade documentation covering all hardware, firmware, navigation, and dashboard decisions. This hub tracks everything — from component changes to budget, reference photos, and future ideas.</p>
+  <p class="hero-desc">Full upgrade documentation covering all hardware, firmware, navigation, and dashboard decisions. Every component audited — servo amplifier, logic level shifting, fuse, voltage alarm, and OV7670 FIFO version all resolved.</p>
   <div class="hero-tags">
-    <span class="tag tag-amber">11 Departments Upgraded</span>
-    <span class="tag tag-green">₹18,634 Total Budget</span>
-    <span class="tag tag-blue">ESP32-S3 + OpenMV H7</span>
-    <span class="tag tag-purple">A* Navigation</span>
-    <span class="tag tag-blue">Mecanum 4WD</span>
-    <span class="tag tag-red">SSIP Funding Proposal</span>
+    <span class="tag tag-amber">10 Categories · Fully Audited</span>
+    <span class="tag tag-green">₹24,627 Build Cost</span>
+    <span class="tag tag-red">₹30,000 SSIP Ask</span>
+    <span class="tag tag-blue">ESP32-S3 · OV7670 FIFO</span>
+    <span class="tag tag-purple">A* Navigation · RFID + Odometry</span>
+    <span class="tag tag-blue">11.1V 3S LiPo · 10A Fused</span>
   </div>
   <div class="hero-stats">
-    <div class="stat-card"><div class="stat-label">Departments</div><div class="stat-val">11</div></div>
-    <div class="stat-card"><div class="stat-label">Total Budget</div><div class="stat-val">₹18,634</div></div>
-    <div class="stat-card"><div class="stat-label">FSM States</div><div class="stat-val">11</div></div>
+    <div class="stat-card"><div class="stat-label">Categories</div><div class="stat-val">10</div></div>
+    <div class="stat-card"><div class="stat-label">Build Cost</div><div class="stat-val">₹24,627</div></div>
+    <div class="stat-card"><div class="stat-label">SSIP Ask</div><div class="stat-val">₹30,000</div></div>
     <div class="stat-card"><div class="stat-label">GPIO Used</div><div class="stat-val">44/45</div></div>
     <div class="stat-card"><div class="stat-label">Runtime</div><div class="stat-val">~90 min</div></div>
   </div>
@@ -46,7 +47,7 @@
 <section id="upgrades">
   <div class="section-label">Part-by-Part Breakdown</div>
   <div class="section-title">Upgrade Analysis</div>
-  <p class="section-desc">Every hardware and software decision — what we used before, why it failed, how we solved it, and what replaced it. Click any department to expand.</p>
+  <p class="section-desc">Every hardware and software decision — what we used before, why it failed, how we solved it, and what replaced it. All 10 categories audited including logic levels, pull-ups, fuse, and voltage alarm. Click any to expand.</p>
   <div id="upgrades-list"></div>
 </section>
 
@@ -55,23 +56,24 @@
 <section id="budget">
   <div class="section-label">Cost Breakdown</div>
   <div class="section-title">Budget Summary</div>
-  <p class="section-desc">Complete procurement cost per category for a full new TrackBot 1 build. Includes spare parts and shipping buffer.</p>
+  <p class="section-desc">Complete procurement cost for a full TrackBot 1 build including spares, tools, shipping buffer, and contingency for mechanism redesign.</p>
   <div class="budget-grid">
-    <div class="budget-item"><span class="b-name">Chassis and structure</span><span class="b-val">₹2,015</span></div>
-    <div class="budget-item"><span class="b-name">Drive system (wheels + motors + drivers)</span><span class="b-val">₹3,470</span></div>
-    <div class="budget-item"><span class="b-name">Microcontroller + IMU</span><span class="b-val">₹520</span></div>
-    <div class="budget-item"><span class="b-name">Full sensor suite</span><span class="b-val">₹4,300</span></div>
-    <div class="budget-item"><span class="b-name">Display system</span><span class="b-val">₹320</span></div>
-    <div class="budget-item"><span class="b-name">Power system</span><span class="b-val">₹1,930</span></div>
-    <div class="budget-item"><span class="b-name">Pickup mechanism</span><span class="b-val">₹670</span></div>
-    <div class="budget-item"><span class="b-name">Safety components</span><span class="b-val">₹150</span></div>
-    <div class="budget-item"><span class="b-name">Small hardware and consumables</span><span class="b-val">₹1,535</span></div>
-    <div class="budget-item"><span class="b-name">Surplus and spare parts</span><span class="b-val">₹2,380</span></div>
-    <div class="budget-item"><span class="b-name">Shipping + procurement buffer (8%)</span><span class="b-val">₹1,344</span></div>
+    <div class="budget-item"><span class="b-name">01 — Chassis &amp; Structure</span><span class="b-val">₹2,977</span></div>
+    <div class="budget-item"><span class="b-name">02 — Drive System</span><span class="b-val">₹4,975</span></div>
+    <div class="budget-item"><span class="b-name">03 — Computing &amp; Control</span><span class="b-val">₹1,240</span></div>
+    <div class="budget-item"><span class="b-name">04 — Sensors</span><span class="b-val">₹2,645</span></div>
+    <div class="budget-item"><span class="b-name">05 — Display</span><span class="b-val">₹640</span></div>
+    <div class="budget-item"><span class="b-name">06 — Power System (3S + fuse + alarm)</span><span class="b-val">₹4,374</span></div>
+    <div class="budget-item"><span class="b-name">07 — Pickup Mechanism</span><span class="b-val">₹1,640</span></div>
+    <div class="budget-item"><span class="b-name">08 — Safety &amp; Indicators</span><span class="b-val">₹505</span></div>
+    <div class="budget-item"><span class="b-name">09 — Wiring, PCB &amp; Fasteners</span><span class="b-val">₹3,861</span></div>
+    <div class="budget-item"><span class="b-name">10 — Essential Tools</span><span class="b-val">₹1,770</span></div>
+    <div class="budget-item"><span class="b-name">Y — Shipping 3% + Price Buffer 5%</span><span class="b-val">₹2,373</span></div>
+    <div class="budget-item"><span class="b-name">Z — Contingency (claw redesign + mid-project)</span><span class="b-val">₹3,000</span></div>
   </div>
   <div class="budget-total">
-    <span class="bt-label">Grand Total — TrackBot 1</span>
-    <span class="bt-val">₹18,634</span>
+    <span class="bt-label">SSIP Ask — X + Y + Z</span>
+    <span class="bt-val">₹30,000</span>
   </div>
 </section>
 
@@ -80,14 +82,16 @@
 <section id="gallery">
   <div class="section-label">Reference Photos</div>
   <div class="section-title">Project Gallery</div>
-  <p class="section-desc">Add photos of your prototype, components, arena, or reference images here. To add a photo: drop the image into the <code>assets/</code> folder and replace a placeholder card.</p>
+  <p class="section-desc">Reference photos, prototype builds, arena layouts, and component shots. Replace placeholders by editing index.html — swap the placeholder div for an img tag pointing to assets/your-photo.jpg.</p>
   <div class="gallery-grid">
     <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">Prototype 1 — Full View</div><div class="pm-desc">Original Cligo kit build</div></div></div>
-    <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">Chassis Frame Reference</div><div class="pm-desc">T-slot extrusion assembly idea</div></div></div>
-    <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">Mecanum Wheel Set</div><div class="pm-desc">65mm target component</div></div></div>
-    <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">Arena Layout</div><div class="pm-desc">Grid zone map for navigation</div></div></div>
-    <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">Claw Mechanism Reference</div><div class="pm-desc">Parallel gripper design inspiration</div></div></div>
-    <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">Dashboard Screenshot</div><div class="pm-desc">WebSocket monitoring panel</div></div></div>
+    <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">T-slot Chassis Frame</div><div class="pm-desc">20x20mm aluminium extrusion assembly</div></div></div>
+    <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">65mm Mecanum Wheel Set</div><div class="pm-desc">2L + 2R — verify 3mm D-shaft bore</div></div></div>
+    <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">N20 Encoder Motor</div><div class="pm-desc">200RPM with Hall effect encoder</div></div></div>
+    <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">ESP32-S3 + Logic Level Converter</div><div class="pm-desc">38-pin devkit + 4-channel level shifter</div></div></div>
+    <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">11.1V 3S LiPo + iMax B6</div><div class="pm-desc">Power system with balance charger</div></div></div>
+    <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">OV7670 FIFO Claw Camera</div><div class="pm-desc">AL422B FIFO buffer version — claw arm mount</div></div></div>
+    <div class="photo-card"><div class="photo-placeholder"><span class="ph-icon">📷</span><span class="ph-text">Add photo here</span></div><div class="photo-meta"><div class="pm-title">Arena Layout</div><div class="pm-desc">RFID tag grid + zone map</div></div></div>
   </div>
 </section>
 
@@ -96,14 +100,14 @@
 <section id="ideas">
   <div class="section-label">Future Development</div>
   <div class="section-title">Ideas Board</div>
-  <p class="section-desc">Features, upgrades, and research directions tracked for TrackBot 2 and beyond. Add your own ideas by copying an idea card in the HTML.</p>
+  <p class="section-desc">Features, upgrades, and research directions tracked for TrackBot 2 and beyond.</p>
   <div class="ideas-grid">
     <div class="idea-card"><div class="idea-status status-planned">Planned — TrackBot 2</div><div class="idea-title">Scissor Fork Lift Mechanism</div><div class="idea-desc">Expert-fabricated aluminium scissor lift. True vertical linear motion. NEMA 17 stepper. 500g payload capacity.</div></div>
-    <div class="idea-card"><div class="idea-status status-planned">Planned — TrackBot 2</div><div class="idea-title">Autonomous Charging Dock</div><div class="idea-desc">Robot navigates to charging station when battery drops below 15%. Fully autonomous operation without manual recharge.</div></div>
-    <div class="idea-card"><div class="idea-status status-planned">Planned — TrackBot 2</div><div class="idea-title">Computer Vision Sorting</div><div class="idea-desc">OpenMV H7 classifies payload type by colour or shape. Routes different payloads to different drop zones automatically.</div></div>
-    <div class="idea-card"><div class="idea-status status-planned">Planned — Research</div><div class="idea-title">Multi-Robot Fleet Coordination</div><div class="idea-desc">MQTT broker manages multiple TrackBot units. Central task scheduler with shared occupancy grid for collision avoidance.</div></div>
-    <div class="idea-card"><div class="idea-status status-planned">Planned — Research</div><div class="idea-title">ArUco Marker Navigation</div><div class="idea-desc">Replace RFID tags with ArUco visual markers. Camera reads markers for position correction. No physical tag hardware in arena.</div></div>
-    <div class="idea-card"><div class="idea-status status-planned">Planned — Research</div><div class="idea-title">PID Auto-Tuning</div><div class="idea-desc">Ziegler-Nichols relay feedback auto-tuning for all 4 PID controllers. Eliminates manual tuning. Better performance on varied surfaces.</div></div>
+    <div class="idea-card"><div class="idea-status status-planned">Planned — TrackBot 2</div><div class="idea-title">Autonomous Charging Dock</div><div class="idea-desc">Robot navigates to charging station when cell voltage alarm triggers below 3.6V/cell. No manual intervention.</div></div>
+    <div class="idea-card"><div class="idea-status status-planned">Planned — TrackBot 2</div><div class="idea-title">Stepper-Based Rack and Pinion Claw</div><div class="idea-desc">Contingency mechanism — NEMA17 rack-and-pinion replaces servo claw if servo torque insufficient for payload. Budget allocated in Z.</div></div>
+    <div class="idea-card"><div class="idea-status status-planned">Planned — Research</div><div class="idea-title">Multi-Robot Fleet via MQTT</div><div class="idea-desc">MQTT broker manages multiple TrackBot units. Central task scheduler with shared occupancy grid for collision avoidance.</div></div>
+    <div class="idea-card"><div class="idea-status status-planned">Planned — Research</div><div class="idea-title">ArUco Marker Navigation</div><div class="idea-desc">Replace RFID floor tags with ArUco visual markers. OV7670 reads markers for position correction. No physical floor hardware.</div></div>
+    <div class="idea-card"><div class="idea-status status-planned">Planned — Research</div><div class="idea-title">PID Auto-Tuning (Ziegler-Nichols)</div><div class="idea-desc">Relay feedback auto-tuning for all 4 wheel PID controllers. Eliminates manual tuning session. Better performance across surfaces.</div></div>
   </div>
 </section>
 
@@ -112,49 +116,162 @@
 <section id="references">
   <div class="section-label">Research and Sources</div>
   <div class="section-title">References</div>
-  <p class="section-desc">Papers, datasheets, tutorials, and resources used during the upgrade design process. Add any reference you consult during development.</p>
+  <p class="section-desc">Datasheets, tutorials, and resources verified during the component audit process.</p>
   <div class="ref-list">
     <div class="ref-item"><span class="ref-num">01</span><div class="ref-content"><div class="rc-title">ESP32-S3 Technical Reference Manual — Espressif Systems</div><div class="rc-type">DATASHEET · <a href="https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_en.pdf" target="_blank">espressif.com</a></div></div></div>
-    <div class="ref-item"><span class="ref-num">02</span><div class="ref-content"><div class="rc-title">TB6612FNG Motor Driver Product Brief — Toshiba</div><div class="rc-type">DATASHEET · <a href="https://toshiba.semicon-storage.com/info/TB6612FNG_datasheet_en_20141001.pdf" target="_blank">toshiba.com</a></div></div></div>
-    <div class="ref-item"><span class="ref-num">03</span><div class="ref-content"><div class="rc-title">OpenMV H7 Documentation and MicroPython API</div><div class="rc-type">DOCUMENTATION · <a href="https://docs.openmv.io" target="_blank">docs.openmv.io</a></div></div></div>
-    <div class="ref-item"><span class="ref-num">04</span><div class="ref-content"><div class="rc-title">Introduction to A* Pathfinding — Red Blob Games</div><div class="rc-type">TUTORIAL · <a href="https://www.redblobgames.com/pathfinding/a-star/introduction.html" target="_blank">redblobgames.com</a></div></div></div>
-    <div class="ref-item"><span class="ref-num">05</span><div class="ref-content"><div class="rc-title">MPU-6050 Product Specification — InvenSense</div><div class="rc-type">DATASHEET · <a href="https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf" target="_blank">invensense.com</a></div></div></div>
-    <div class="ref-item"><span class="ref-num">06</span><div class="ref-content"><div class="rc-title">WebSocket Protocol Specification — RFC 6455</div><div class="rc-type">STANDARD · <a href="https://datatracker.ietf.org/doc/html/rfc6455" target="_blank">ietf.org</a></div></div></div>
-    <div class="ref-item"><span class="ref-num">07</span><div class="ref-content"><div class="rc-title">Mecanum Wheel Kinematics and Motion Planning</div><div class="rc-type">PAPER · Add link when sourced</div></div></div>
+    <div class="ref-item"><span class="ref-num">02</span><div class="ref-content"><div class="rc-title">TB6612FNG Motor Driver Datasheet — Toshiba Semiconductor</div><div class="rc-type">DATASHEET · <a href="https://toshiba.semicon-storage.com/info/TB6612FNG_datasheet_en_20141001.pdf" target="_blank">toshiba.com</a></div></div></div>
+    <div class="ref-item"><span class="ref-num">03</span><div class="ref-content"><div class="rc-title">HC-SR04 Ultrasonic Sensor — ECHO Pin 5V Output, Logic Level Shifting</div><div class="rc-type">APP NOTE · Verified: ECHO = 5V output, TRIG accepts 3.3V. Logic level converter required on ECHO pins.</div></div></div>
+    <div class="ref-item"><span class="ref-num">04</span><div class="ref-content"><div class="rc-title">OV7670 + AL422B FIFO Camera Module Interface Guide</div><div class="rc-type">APP NOTE · Order FIFO version specifically — buffers full frame, ESP32-S3 reads at own pace via DVP interface (~12 GPIO)</div></div></div>
+    <div class="ref-item"><span class="ref-num">05</span><div class="ref-content"><div class="rc-title">Introduction to A* Pathfinding — Red Blob Games</div><div class="rc-type">TUTORIAL · <a href="https://www.redblobgames.com/pathfinding/a-star/introduction.html" target="_blank">redblobgames.com</a></div></div></div>
+    <div class="ref-item"><span class="ref-num">06</span><div class="ref-content"><div class="rc-title">MPU-6050 Product Specification — InvenSense / TDK</div><div class="rc-type">DATASHEET · <a href="https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf" target="_blank">invensense.com</a></div></div></div>
+    <div class="ref-item"><span class="ref-num">07</span><div class="ref-content"><div class="rc-title">HX711 Load Cell Amplifier Datasheet — Avia Semiconductor</div><div class="rc-type">DATASHEET · 3.3V compatible. RATE pin → GND for 10Hz. No additional components needed beyond breakout module.</div></div></div>
+    <div class="ref-item"><span class="ref-num">08</span><div class="ref-content"><div class="rc-title">WebSocket Protocol Specification — RFC 6455</div><div class="rc-type">STANDARD · <a href="https://datatracker.ietf.org/doc/html/rfc6455" target="_blank">ietf.org</a></div></div></div>
   </div>
 </section>
 
 <div class="rule"></div>
 <footer>
   <span>TrackBot 1 — SSIP Proposal Hub</span>
-  <span>₹18,634 · 11 Departments · Team of 4</span>
+  <span>₹24,627 Build · ₹30,000 SSIP Ask · 10 Categories · Team of 4</span>
 </footer>
 
 <script>
-const depts=[
-{num:"01",title:"Chassis",priceOld:"₹800 (Cligo kit)",priceNew:"₹2,225",delta:"+₹1,425",before:"Cligo 4WD plastic hobby kit",drawbacks:["No mounting space for forklift or camera","Space congestion — cannot expand","Plastic frame not rigid under mechanical load","Fixed layout — cannot restructure","Looks hobbyist in SSIP presentation"],solution:["Separate stress zones from electronics zones","T-slot frame allows free component repositioning","Aluminium base plate at motor stress zone","Locking T-nuts + thread-lock for vibration safety"],after:"T-slot aluminium extrusion frame + 3mm acrylic mid/top layers + aluminium base plate. Locking T-nuts + thread-lock throughout."},
-{num:"02",title:"Wheels",priceOld:"₹350 (standard rubber)",priceNew:"₹1,250",delta:"+₹900",before:"Standard 4WD rubber wheels — differential steering only",drawbacks:["Cannot move sideways — needs full turning radius","Cannot align precisely with pickup targets","Requires fixed painted path on floor","Incompatible with grid coordinate navigation"],solution:["Mecanum wheel geometry — 4WD motor count unchanged","Full omnidirectional movement unlocked","Strafing enables precise claw alignment without turning"],after:"65mm mecanum wheel set. Forward, backward, strafe, diagonal, rotate — all directions without chassis rotation."},
-{num:"03",title:"Motors",priceOld:"₹600 (basic DC ×4)",priceNew:"₹1,800",delta:"+₹1,200",before:"Basic DC gear motors — no encoder",drawbacks:["No position feedback — blind speed control","Cannot track distance for grid navigation","Mecanum drift undetectable without feedback","No stall or failure detection"],solution:["Factory-integrated Hall effect encoder — no alignment issues","210 pulses/rev = ~1mm precision per pulse","200 RPM chosen for torque vs speed balance"],after:"N20 200RPM DC gear motors with built-in Hall effect encoder. 700Hz pulse rate per wheel. Full independent control on all 4 wheels."},
-{num:"04",title:"Motor drivers",priceOld:"₹420 (owned)",priceNew:"₹420 (new build)",delta:"No design change — ₹0",before:"2× TB6612FNG — already correctly architected in Prototype 1",drawbacks:["No drawbacks — architecture was already correct","Full new purchase needed for independent new build only"],solution:["No change to driver selection required","New procurement for TrackBot 1 standalone build"],after:"2× TB6612FNG retained. MOSFET-based, efficient, low heat. 4 fully independent PWM channels — one per mecanum wheel."},
-{num:"05",title:"Microcontroller",priceOld:"₹220 (ESP32)",priceNew:"₹420 (ESP32-S3)",delta:"+₹200",before:"Standard ESP32",drawbacks:["Only 34 usable GPIO — system needs 44","Encoder interrupts compete with WiFi on same core","Interrupt latency under WiFi load causes position drift","No AI acceleration for vision pipeline"],solution:["ESP32-S3 — identical codebase, 45 GPIO pins","Core 0 dedicated to real-time tasks exclusively","Core 1 dedicated to WiFi and communication"],after:"ESP32-S3. 45 GPIO (44 used, 1 spare). Core 0 = encoders/motors/FSM. Core 1 = WiFi/dashboard/display. Built-in AI acceleration."},
-{num:"06",title:"Navigation system",priceOld:"Firmware — ₹0",priceNew:"Firmware — ₹0",delta:"Software only — ₹0",before:"IR line following + basic differential steering",drawbacks:["Follows painted lines only — no flexible routing","No position awareness between RFID checkpoints","No dynamic obstacle replanning","Rotation drift completely undetected","Incompatible with mecanum movement"],solution:["A* pathfinding on 5×4 coordinate grid","Encoder odometry — continuous position tracking","RFID tags as hard landmark correction points","MPU6050 IMU for heading tracking","PID per wheel for speed accuracy"],after:"A* + encoder odometry + RFID correction + IMU heading + 4× PID controllers. Landmark-based navigation with odometry — same as industrial AGVs."},
-{num:"07",title:"Sensors",priceOld:"₹400 (basic set)",priceNew:"₹4,435",delta:"+₹4,035",before:"1× front ultrasonic, IR array, RFID RC522, OLED",drawbacks:["Single ultrasonic — blind left and right","IR array redundant after navigation upgrade","No orientation sensing","No computer vision","No payload weight sensing"],solution:["IR array repurposed as arena edge detection","3× ultrasonics + rotating servo mount for 180° scan","MPU6050 IMU for orientation","OpenMV H7 for onboard computer vision","OV7670 on claw arm for grip alignment","Load cell + HX711 for payload monitoring"],after:"3× HC-SR04 + rotating servo + IR edge + RFID RC522 + MPU6050 + OpenMV H7 + OV7670 claw camera + 1kg load cell + HX711."},
-{num:"08",title:"Display",priceOld:"₹140 (0.96\" OLED)",priceNew:"₹320 (1.8\" TFT)",delta:"+₹180",before:"0.96-inch OLED 128×64 monochrome",drawbacks:["Only 4 lines of readable text","Cannot show all 7 data points simultaneously","No colour — cannot differentiate alert severity","Undersells an ₹18,000 prototype"],solution:["Colour display for visual alert coding","Larger size for all data simultaneously","SPI interface for fast refresh"],after:"1.8-inch TFT colour LCD 160×128. 7 data fields with red/amber/green colour-coded live alerts per field."},
-{num:"09",title:"Power system",priceOld:"₹500 (basic pack)",priceNew:"₹1,310",delta:"+₹810",before:"Basic 7.4V battery — no voltage regulation strategy",drawbacks:["Raw battery voltage to all components","Motor stall spikes can damage logic boards","No battery level monitoring","Unknown runtime","No safe LiPo charging system"],solution:["3 distinct voltage rails with dedicated buck converters","XL4016 8A for motor rail — 3× stall margin","MP1584 3A for logic rail — efficient, low heat","2200mAh for 90min demo runtime","B3AC balance charger + fireproof bag"],after:"7.4V 2S LiPo 2200mAh. XL4016 → 6V motors. MP1584 → 5V logic. ESP32-S3 onboard → 3.3V. Voltage divider battery monitor."},
-{num:"10",title:"Pickup mechanism",priceOld:"₹0 (none)",priceNew:"₹535",delta:"+₹535 (new)",before:"No pickup mechanism — navigation demonstration only",drawbacks:["Cannot simulate complete warehouse workflow","No pick and place capability","Cannot justify full AGV claim in SSIP pitch","Robot limited to movement demonstration only"],solution:["Dual servo parallel gripper — team buildable in 2 hours","SG90 for grip, MG996R for lift","3D printed PLA fingers from college printer","OV7670 claw camera for visual alignment","Pitched as Adaptive End Effector"],after:"Parallel gripper claw. SG90 grip + MG996R lift + 3D printed PLA fingers + rubber grip + OV7670 vision. 10-step autonomous cycle."},
-{num:"11",title:"Dashboard & comms",priceOld:"Firmware — ₹0",priceNew:"Firmware — ₹0",delta:"Software only — ₹0",before:"Basic HTTP polling — 2-5 second latency",drawbacks:["2-5 second data latency","Full HTTP overhead per data point","Effectively one-directional","No alerts, no mission dispatch, no analytics"],solution:["WebSocket — real-time bidirectional connection","Served from ESP32-S3 SPIFFS — no external server","3-panel: telemetry, mission control, analytics","6 alert types — visual + audio","AP mode for demo, station mode for dev"],after:"WebSocket <50ms latency. HTML/JS/CSS on ESP32-S3. Telemetry + mission dispatch + analytics + 6 alert types. No internet required."},
+const depts = [
+  {
+    num:"01", title:"Chassis and Structure",
+    priceOld:"₹800 (Cligo kit)", priceNew:"₹2,977", delta:"+₹2,177",
+    before:"Cligo 4WD plastic hobby kit — fixed layout, no expansion",
+    drawbacks:["No mounting space for claw mechanism or claw camera","Plastic frame not rigid under motor torque and vibration","Fixed component positions — cannot restructure","T-slot extrusion requires no custom fabrication — bolt together","Undersells an ₹30,000 SSIP prototype visually"],
+    solution:["20x20mm T-slot aluminium extrusion — 6 lengths of 500mm","Corner cube 3-way brackets at every joint for rigidity","3mm acrylic mid and top plates — laser-cut pilot holes prevent star-cracking","3mm aluminium base plate at motor mounting zone","Nylon M3 spacers isolate electronics boards from metal chassis","Spiral cable wrap + adhesive clips for clean cross-layer routing"],
+    after:"T-slot extrusion frame + acrylic layers + aluminium base plate. Locking T-nuts + thread-lock throughout. Cable conduit for clean routing. Modular — any component can be repositioned without drilling."
+  },
+  {
+    num:"02", title:"Drive System",
+    priceOld:"₹1,370 (basic wheels + motors + drivers)", priceNew:"₹4,975", delta:"+₹3,605",
+    before:"Standard rubber wheels + basic DC gear motors (no encoder) + 2x TB6612FNG",
+    drawbacks:["Standard wheels — differential steering only, no lateral movement","Cannot align claw with pickup target without full turning radius","No encoder feedback — blind speed control, no distance tracking","Mecanum drift completely undetectable and uncorrectable","Hall effect encoders have open-drain output — floats without pull-up resistors"],
+    solution:["65mm mecanum wheel set 2L+2R — verify 3mm D-shaft bore before ordering","N20 200RPM with built-in Hall effect encoder — 210 pulses/rev, ~1mm resolution","TB6612FNG retained — already correct, MOSFET-based with flyback diodes built in","4.7k ohm pull-up resistors on encoder A+B channels per motor (8 total) — in resistor pack","Spare x2 motors included — most failure-prone component on the build"],
+    after:"65mm mecanum 4WD + N20 200RPM Hall encoder motors + 2x TB6612FNG. Full omnidirectional movement. 4.7k pull-ups on all 8 encoder channels. One spare TB6612FNG against reverse-wiring burnout."
+  },
+  {
+    num:"03", title:"Computing and Control",
+    priceOld:"₹220 (standard ESP32)", priceNew:"₹1,240", delta:"+₹1,020",
+    before:"Standard ESP32 — 34 usable GPIO, single core for all tasks",
+    drawbacks:["Only 34 usable GPIO — TrackBot 1 needs 44","Encoder interrupts compete with WiFi stack on same core","HC-SR04 ECHO pin outputs 5V — damages ESP32-S3 GPIO over time at 3.3V max","No AI acceleration peripheral for camera processing","Bricks during firmware flashing — no spare = project halt"],
+    solution:["ESP32-S3 — 45 GPIO (44 used, 1 spare). Core 0 real-time, Core 1 WiFi/comms","4-channel logic level converter on ECHO pins — TRIG accepts 3.3V, ECHO outputs 5V, must shift down","TRIG pin safe at 3.3V — only ECHO needs shifting. 1 spare channel on converter","MPU6050 I2C at 3.3V — direct, no extras. Onboard pull-ups on breakout module","Spare ESP32-S3 included — bricks during flashing are common on first build"],
+    after:"ESP32-S3 (45 GPIO, dual core) + MPU6050 IMU + 4-channel logic level converter. ECHO pins safely level-shifted. Core 0 = encoders/motors/FSM. Core 1 = WiFi/dashboard/display."
+  },
+  {
+    num:"04", title:"Sensors",
+    priceOld:"₹400 (basic single-sensor set)", priceNew:"₹2,645", delta:"+₹2,245",
+    before:"1x front ultrasonic, IR line array (navigation), RFID RC522, small OLED",
+    drawbacks:["Single ultrasonic — blind to left and right obstacles","IR array was for line following — incompatible with grid navigation","No payload weight sensing — cannot confirm pickup","Plain OV7670 requires tight real-time pixel capture on PCLK — difficult on ESP32-S3","No rotating sensor mount — fixed front-only scan"],
+    solution:["3x HC-SR04 front/left/right + SG90 servo rotation mount for 180 deg sweep","IR array repurposed as arena edge detection — stops robot at arena boundary","OV7670 WITH AL422B FIFO buffer module on claw arm — same price, buffers full frame","RFID RC522 SPI at 3.3V — direct ESP32-S3 compatible, onboard pull-ups on module","Load cell 1kg + HX711 at 3.3V — payload confirmation before navigation resumes","No top camera — navigation via RFID landmarks + encoder odometry only"],
+    after:"3x HC-SR04 (level-shifted) + rotating SG90 + IR edge array + RFID RC522 + RFID floor tags + OV7670 FIFO (claw arm) + 1kg load cell + HX711. No top camera needed."
+  },
+  {
+    num:"05", title:"Display",
+    priceOld:"₹140 (0.96 inch OLED)", priceNew:"₹640", delta:"+₹500",
+    before:"0.96-inch OLED 128x64 monochrome — 4 readable lines maximum",
+    drawbacks:["Only 4 data fields visible simultaneously","No colour — cannot code alerts by severity","Cannot show speed + heading + battery + position + payload + obstacle + status at once","Undersells the sophistication of the system in an SSIP demonstration"],
+    solution:["1.8-inch TFT colour LCD ST7735 SPI interface","160x128 resolution — 7 data fields with labels","Red/Amber/Green per-field colour coding based on alert threshold","Spare included — SPI pins short easily during prototype wiring"],
+    after:"ST7735 1.8 inch TFT 160x128. 7 live fields: speed, heading, battery voltage, grid position, payload weight, obstacle distance, FSM state. R/A/G alert colours per field."
+  },
+  {
+    num:"06", title:"Power System",
+    priceOld:"₹500 (7.4V 2S LiPo + B3AC charger)", priceNew:"₹4,374", delta:"+₹3,874",
+    before:"7.4V 2S LiPo — no fuse, no regulated rails, B3AC charger",
+    drawbacks:["7.4V insufficient for motor headroom — mecanum motors need consistent voltage","No fuse — short circuit delivers 30-50A from LiPo into wiring, fire risk","No cell voltage monitoring — over-discharge damages LiPo permanently","Motor stall current spikes reach logic rail without separate regulation","B3AC only supports 2S — incompatible with 3S upgrade"],
+    solution:["11.1V 3S LiPo 2200mAh XT60 — 2 batteries for swap during continuous testing","10A blade automotive fuse + inline holder between XT60 and power switch — mandatory","XL4016 8A buck: 11.1V to 6V motor rail — 3x stall current margin","MP1584 3A buck: 11.1V to 5V logic/servo rail — clean regulated supply","1000uF bulk capacitor on 5V rail — absorbs 3-servo simultaneous 1700mA peak","LiPo cell voltage alarm on balance connector — beeps below 3.6V/cell","iMax B6 balance charger — supports 3S, never use B3AC on 3S","Recalculated voltage divider: R1=10k, R2=3.9k for 11.1V input → 3.07V ADC safe"],
+    after:"11.1V 3S 2200mAh x2 + iMax B6 + 10A fuse + XL4016 (6V motors) + MP1584 (5V logic/servos) + 1000uF servo cap + cell voltage alarm. Full safety chain. ~90 min runtime per battery."
+  },
+  {
+    num:"07", title:"Pickup Mechanism",
+    priceOld:"₹0 (none in Prototype 1)", priceNew:"₹1,640", delta:"+₹1,640 (new)",
+    before:"No pickup mechanism — Prototype 1 was navigation demonstration only",
+    drawbacks:["Cannot demonstrate complete warehouse AGV workflow","No pick and place capability — just a moving platform","Cannot justify autonomous logistics claim in SSIP pitch","No claw = no payload weight sensing purpose"],
+    solution:["MG996R metal gear servo for lift axis — built-in driver, no amplifier board needed","SG90 micro servo for grip axis — ESP32-S3 PWM direct, 50Hz signal","PLA claw from college 3D printer — redesigned multiple times, 500g filament budgeted","Servo horn sets for testing different arm lengths and reach profiles","M3 threaded rod + clevis connectors for adjustable claw linkage","OV7670 FIFO on claw arm for visual grip alignment — direct, demonstrable purpose"],
+    after:"MG996R (lift) + SG90 (grip) + 3D printed PLA fingers + rubber grip tape + servo horn sets + M3 rod linkage + clevis connectors + OV7670 FIFO claw cam. Contingency budget in Z if switching to stepper mechanism."
+  },
+  {
+    num:"08", title:"Safety and Indicators",
+    priceOld:"₹0 (none)", priceNew:"₹505", delta:"+₹505 (new)",
+    before:"No safety features — Prototype 1 had no emergency stop or status indicators",
+    drawbacks:["No way to cut power instantly in demonstration","No visual status feedback during autonomous operation","Evaluators cannot tell robot state from observation","Buzzer alerts required for obstacle and mission events"],
+    solution:["E-stop NC mushroom button 22mm — cuts motor power, normally-closed fail-safe","5V relay module — isolates motor driver enable lines from E-stop circuit","5V active buzzer — obstacle detection, mission complete, error alerts","R/G/A 5mm LEDs — robot state colour coding (idle/running/error)","220 ohm current limiting resistors on all LED lines"],
+    after:"E-stop NC mushroom + relay + buzzer + R/G/A status LEDs. Spare x1 on every component — all fail under vibration. Visual state readable from across the room during SSIP demonstration."
+  },
+  {
+    num:"09", title:"Wiring, PCB and Fasteners",
+    priceOld:"Basic wiring — ₹500 estimated", priceNew:"₹3,861", delta:"+₹3,361",
+    before:"PVC insulated wire, basic Dupont jumpers, no connector standard",
+    drawbacks:["PVC insulation cracks and splits from repeated bending during reassembly","No JST standard for N20 motor 6-wire encoder connections","No perfboard — all connections on breadboard (unreliable under vibration)","Student builds rewire 2-3 times — minimum quantity always insufficient","No desoldering tools — mistakes are permanent without solder wick or pump"],
+    solution:["22 AWG silicone wire for all motor and power lines — flexible, crack-resistant","24 AWG silicone wire for signal lines — colour-coded (blue, yellow, green)","JST-XH 2.54mm 6-pin sets for N20 motor encoder connections — critical standard","Dupont wire in M-M, M-F, F-F sets — 30cm added for cross-layer routing","Perfboard double-sided 10x10cm and 7x5cm for sub-circuits","Solder wick + desoldering pump — mandatory for error recovery","IPA 99% for flux residue cleanup. Anti-static wrist strap for ESP32-S3 and OV7670"],
+    after:"Silicone wire throughout + JST-XH motor connectors + perfboard sub-circuits + proper soldering consumables + desoldering tools. Breadboards for circuit validation before soldering. Wiring survives repeated rebuilds."
+  },
+  {
+    num:"10", title:"Essential Tools",
+    priceOld:"₹0 (borrow from lab)", priceNew:"₹1,770", delta:"+₹1,770 (new)",
+    before:"No dedicated tool budget — rely on college lab availability",
+    drawbacks:["Lab tools unavailable during crunch build periods","Cannot test wiring or motor connections without multimeter","Wrong bore on mecanum wheel hub without digital calipers = wheel cannot mount","Servo horn screws stripped without correct precision screwdriver","Soldering errors permanent without desoldering capability (in Cat 09)"],
+    solution:["Digital multimeter — voltage, continuity, motor terminal testing","Wire stripper and crimping tool — clean prep and JST connector crimping","Precision screwdriver set PH0/PH1/flat/hex — T-slot bolts, servo screws, standoffs","Digital calipers 150mm — measure motor shaft and wheel hub bore before assembly","Helping hands PCB holder with magnifier — holds board steady during soldering","Hot glue gun — temporary fixturing during chassis assembly and wire management","Check college lab first — only purchase tools not already available"],
+    after:"Full personal tool kit: multimeter + wire stripper + crimper + precision screwdrivers + calipers + helping hands + hot glue gun. Development does not depend on lab availability or booking."
+  }
 ];
-function renderUpgrades(){
-  const list=document.getElementById('upgrades-list');
-  depts.forEach((d,i)=>{
-    const isZero=d.delta.includes('₹0')||d.delta.startsWith('No design');
-    const card=document.createElement('div');
-    card.className='dept-card';
-    card.innerHTML=`<div class="dept-header" onclick="toggle(${i})"><div class="dept-left"><div class="dept-num">${d.num}</div><div class="dept-title">${d.title}</div></div><div class="dept-right"><span class="price-badge ${isZero?'badge-zero':'badge-up'}">${d.delta}</span><span class="chevron" id="chev-${i}">▼</span></div></div><div class="dept-body" id="body-${i}"><div class="grid4"><div class="col col-before"><div class="col-label lbl-before">Before</div><div class="col-val">${d.before}</div></div><div class="col col-draw"><div class="col-label lbl-draw">Drawbacks</div><div class="col-val"><ul>${d.drawbacks.map(x=>`<li>${x}</li>`).join('')}</ul></div></div><div class="col col-sol"><div class="col-label lbl-sol">How solved</div><div class="col-val"><ul>${d.solution.map(x=>`<li>${x}</li>`).join('')}</ul></div></div><div class="col col-after"><div class="col-label lbl-after">After</div><div class="col-val">${d.after}</div></div></div><div class="price-row"><span class="price-lbl">Cost</span><span class="price-old">${d.priceOld}</span><span class="price-arr">→</span><span class="price-new">${d.priceNew}</span><span class="price-delta ${isZero?'delta-zero':'delta-up'}">${d.delta}</span></div></div>`;
+
+function renderUpgrades() {
+  const list = document.getElementById('upgrades-list');
+  depts.forEach((d, i) => {
+    const isZero = d.delta.startsWith('Software') || d.delta.startsWith('Firmware');
+    const card = document.createElement('div');
+    card.className = 'dept-card';
+    card.innerHTML = `
+      <div class="dept-header" onclick="toggle(${i})">
+        <div class="dept-left">
+          <div class="dept-num">${d.num}</div>
+          <div class="dept-title">${d.title}</div>
+        </div>
+        <div class="dept-right">
+          <span class="price-badge ${isZero ? 'badge-zero' : 'badge-up'}">${d.delta}</span>
+          <span class="chevron" id="chev-${i}">&#9660;</span>
+        </div>
+      </div>
+      <div class="dept-body" id="body-${i}">
+        <div class="grid4">
+          <div class="col col-before">
+            <div class="col-label lbl-before">Before</div>
+            <div class="col-val">${d.before}</div>
+          </div>
+          <div class="col col-draw">
+            <div class="col-label lbl-draw">Drawbacks</div>
+            <div class="col-val"><ul>${d.drawbacks.map(x => `<li>${x}</li>`).join('')}</ul></div>
+          </div>
+          <div class="col col-sol">
+            <div class="col-label lbl-sol">How solved</div>
+            <div class="col-val"><ul>${d.solution.map(x => `<li>${x}</li>`).join('')}</ul></div>
+          </div>
+          <div class="col col-after">
+            <div class="col-label lbl-after">After</div>
+            <div class="col-val">${d.after}</div>
+          </div>
+        </div>
+        <div class="price-row">
+          <span class="price-lbl">Cost</span>
+          <span class="price-old">${d.priceOld}</span>
+          <span class="price-arr">&#8594;</span>
+          <span class="price-new">${d.priceNew}</span>
+          <span class="price-delta ${isZero ? 'delta-zero' : 'delta-up'}">${d.delta}</span>
+        </div>
+      </div>`;
     list.appendChild(card);
   });
 }
-function toggle(i){document.getElementById('body-'+i).classList.toggle('open');document.getElementById('chev-'+i).classList.toggle('open');}
+
+function toggle(i) {
+  document.getElementById('body-' + i).classList.toggle('open');
+  document.getElementById('chev-' + i).classList.toggle('open');
+}
+
 renderUpgrades();
 </script>
 </body>
